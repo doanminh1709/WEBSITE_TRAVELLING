@@ -1,0 +1,93 @@
+:root {
+  --black-color: #000;
+  --white: #fff;
+}
+
+.container-comment {
+  width: 100%;
+  padding: 0 126px 50px;
+  background: #EDF6F9;
+
+  .title-content {
+      padding: 36px 0;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 33px;
+  }
+
+  .user-comment {
+      position: relative;
+      border-radius: 5px;
+      background-color: var(--white);
+      text-align: center;
+
+      .img-cover {
+          height: 122px;
+          width: 100%;
+          padding: 8px 8px 0;
+          object-fit: cover;
+          border-radius: 5px 5px 0px 0px;
+
+      }
+
+      .img-avt {
+          position: absolute;
+          top: 70px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 102px;
+          height: 102px;
+          border-radius: 50%;
+          object-fit: cover;
+          border: 3px solid var(--white);
+      }
+
+      .name-user {
+          padding-top: 55px;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 22px;
+          color: var(--black-color);
+      }
+
+      .comment-user {
+          padding: 16px 20px;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 19px;
+          color: var(--black-color);
+
+          
+      }
+
+      .icon-social {
+          padding: 20px 3px 24px;
+          font-size: 20px;
+          color: var(--black-color);
+      }
+
+  }
+
+  .intro-company {
+      padding-top: 30px;
+      font-size: 16px;
+      line-height: 22px;
+      color: var(--black-color);
+      text-align: justify;
+  }
+
+ }
+ 
+ // Tablet
+@media only screen and (min-width: 46.25em) and (max-width:63.9375em){
+    .container-comment {
+        padding: 0 30px 50px;
+    }
+}
+// Mobile
+@media only screen and (max-width: 46.1875em) {
+    .container-comment {
+        padding: 0 20px 50px;
+        
+    }
+}

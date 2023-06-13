@@ -1,0 +1,137 @@
+@media only screen and (min-width: 980px) {
+    .login {
+        background-color: rgb(169, 206, 239);
+        height: 800px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &_main {
+            width: 816px;
+            height: 572px;
+            background-color: white;
+            display: flex;
+
+            &-img {
+                img {
+                    height: 572px;
+                    width: 413px;
+                }
+            }
+
+            &-content {
+                display: flex;
+
+                &__signin {
+                    justify-content: center;
+                    align-items: center;
+                    width: 413px;
+                    text-align: center;
+                    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+                    border-radius: 5px;
+
+                    &-close {
+                        margin-right: 15px;
+                        font-size: 21px;
+
+                    }
+                }
+            }
+        }
+    }
+
+    .inputFormik {
+        width: 312px;
+        height: 44px;
+        padding: 20px;
+        background-color: #EDF2F7;
+        border-radius: 5px;
+        margin-top: 5px
+    }
+
+    .btn-signin {
+        width: 312px;
+        height: 44px;
+        color: white;
+        border-radius: 5px;
+        margin-top: 20px;
+        border: none;
+
+        :hover {
+            color: black
+        }
+    }
+}
+
+@media only screen and (max-width: 979px) {
+    .login {
+        background-color: rgb(169, 206, 239);
+        height: 800px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &_main {
+            width: 816px;
+            height: 572px;
+            background-color: white;
+            display: flex;
+
+            &-img {
+                img {
+                    height: 572px;
+                    width: 413px;
+                }
+            }
+
+            &-content {
+                display: flex;
+
+                &__signin {
+                    justify-content: center;
+                    align-items: center;
+                    width: 413px;
+                    text-align: center;
+                    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+                    border-radius: 5px;
+
+                    &-close {
+                        margin-right: 15px;
+                        font-size: 21px;
+
+                    }
+                }
+            }
+        }
+    }
+
+    .inputFormik {
+        width: 312px;
+        height: 44px;
+        padding: 20px;
+        background-color: #EDF2F7;
+        border-radius: 5px;
+        margin-top: 7px;
+        
+    }
+
+    .inputFormik:hover {
+        background-color: bisque;
+    }
+
+    .btn-signin {
+        width: 312px;
+        height: 44px;
+        color: white;
+        border-radius: 5px;
+        margin-top: 20px;
+        border: none;
+
+        :hover {
+            color: black
+        }
+    }
+
+}

@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.user3 {
+  background-color: white;
+  padding: 100px 126px 150px 126px;
+  width: 100% ;
+}
+.userr {
+  padding-top: 40px;
+}
+.userr > p {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: #000000;
+}
+.user-posts {
+  background: #EDF2F7;
+  border-radius: 5px;
+  height: 450px;
+  padding: 30px;
+  display: flex;
+  
+}
+.hide {
+  padding-left: 50px;
+}
+.kebab {
+  border: 0.25px solid #b3bac8;
+  border-radius: 5px;
+  width: 35px;
+  height: 23px;
+  background: #d3d5d9;
+  text-align: center;
+}
+.fix {
+  border: 0.25px solid rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 10px 25px 45px 15px;
+  background-color: white;
+  margin-top: 3px;
+}
+.pen {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+.pen p{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+  padding-left: 5px;
+}
+.delete {
+  display: flex; 
+}
+.delete p{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+  padding-left: 5px;
+
+}
+.fix  :hover{
+  color: #FC5981;
+}
+
+// Tablet
+@media only screen and (min-width: 740px) and (max-width:1023px) {
+  .user3 {
+    background-color: white;
+    padding: 100px 26px 150px 26px;
+    width: 100% ;
+  }
+}
+
+ // Mobile
+ @media only screen and (max-width: 739px)  {
+  .user3 {
+    background-color: white;
+    padding: 100px 20px 150px 20px;
+    width: 100% ;
+  }
+ }

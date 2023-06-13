@@ -1,0 +1,67 @@
+.slickSale {
+    background-color: #fae6eb;
+    width: 100%px;
+    height: 600px;
+
+    // &_img {
+    //     height: 64px;
+    // }
+}
+
+
+
+// // .slick-slide {
+// //     margin: 0 10px;
+// // }
+
+// // .slick-list {
+// //     margin: 0 -10px;
+// // }
+
+
+.slick-arrow::before {
+    font-size: 50px !important;
+    z-index: 999;
+
+
+}
+
+.cardSale {
+    height: 402px;
+    z-index: 1;
+
+
+    &-item {
+        background-color: white;
+        height: 402px;
+        width: 279px;
+        border-radius: 5px;
+        box-shadow: 0px 0.5px 3px rgba(0, 0, 0, 0.25);
+        box-sizing: border-box;
+    }
+
+    &-top {
+        border-radius: 5px 5px 0 0;
+
+
+        img {
+            height: 155px;
+            width: 279px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 5px 5px 0 0;
+        }
+    }
+
+    &-bottom {
+        border-radius: 5px;
+
+        &_end {
+            button {
+                background-color: #FF9E43;
+            }
+        }
+    }
+
+
+}

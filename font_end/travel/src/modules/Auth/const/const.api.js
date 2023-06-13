@@ -1,0 +1,1 @@
+export const API = 'https://api-travell.herokuapp.com/api/v1/'

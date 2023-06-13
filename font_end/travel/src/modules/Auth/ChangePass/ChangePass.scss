@@ -1,0 +1,65 @@
+@media only screen and (min-width: 980px) {
+    .change {
+        background-color: rgb(169, 206, 239);
+        height: 800px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &_main {
+            width: 816px;
+            height: 650px;
+            background-color: white;
+            display: flex;
+
+            &-img {
+                img {
+                    height: 650px;
+                    width: 413px;
+                }
+            }
+
+            &-content {
+                display: flex;
+
+                &__input {
+                    justify-content: center;
+                    align-items: center;
+                    width: 413px;
+                    text-align: center;
+                    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+                    border-radius: 5px;
+
+                    &-close {
+                        margin-right: 15px;
+                        font-size: 21px;
+
+                    }
+                }
+            }
+        }
+    }
+
+    .inputPass {
+        width: 312px;
+        height: 44px;
+        padding: 20px;
+        background-color: #EDF2F7;
+        border-radius: 5px;
+        margin-top: 5px
+    }
+
+    .btn-pass {
+        width: 312px;
+        height: 44px;
+        color: white;
+        border-radius: 5px;
+        margin-top: 20px;
+        border: none;
+
+        :hover {
+            color: black
+        }
+    }
+}

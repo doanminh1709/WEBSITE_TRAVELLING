@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.user5 {
+  background-color: white;
+  padding: 100px 126px 150px 126px;
+  width: 100% ;
+}
+.info-user5 {
+  text-align: center;
+  padding-top: 80px;
+}
+.icon-user5 {
+  color: #FC5981;
+  width: 100px;
+  display: block;
+   margin-left: auto; 
+   margin-right: auto;
+}
+.info-user5 p {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FC5981;
+}
+// Tablet
+@media only screen and (min-width: 740px) and (max-width:1023px) {
+  .user5 {
+    background-color: white;
+    padding: 100px 26px 150px 26px;
+    width: 100% ;
+  }
+ 
+}
+
+ // Mobile
+ @media only screen and (max-width: 739px)  {
+  .user5 {
+    background-color: white;
+    padding: 100px 20px 150px 20px;
+    width: 100% ;
+  }
+  
+ }

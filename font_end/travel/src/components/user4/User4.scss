@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.user4 {
+  background-color: white;
+  padding: 100px 126px 150px 126px;
+  width: 100% ;
+}
+
+.info-user4 {
+  border-bottom: 0.25px solid rgba(0, 0, 0, 0.5);
+  padding: 40px 0px 40px 0px ;
+  display: flex;
+  width: 100%;
+}
+.info-cmtt {
+  display: flex;
+  
+}
+.user4-right {
+ width: 30%;
+}
+.people-in4 {
+  width: 20%;
+  padding-left: 25px;
+}
+.evaluatee-cmt {
+  width: 70%;
+}
+// Tablet
+@media only screen and (min-width: 740px) and (max-width:1023px) {
+  .user4 {
+    background-color: white;
+    padding: 100px 26px 150px 26px;
+    width: 100% ;
+  }
+  .info-cmtt {
+    width: 100%;
+  }
+  .people-in4 {
+    width: 25%;
+  }
+}
+
+ // Mobile
+ @media only screen and (max-width: 739px)  {
+  .user4 {
+    background-color: white;
+    padding: 100px 20px 150px 20px;
+    width: 100% ;
+  }
+  .evaluatee-cmt {
+    display: none;
+  }
+  .info-cmtt {
+    width: 100%;
+  }
+  .people-in4 {
+    width: 45%;
+  }
+ }

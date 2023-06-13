@@ -1,0 +1,140 @@
+@media only screen and (min-width: 1440px) {
+    .infoLocation {
+
+        height: 541px;
+        background-color: rgb(215, 240, 236);
+
+        background-color: #FFF5F7;
+        // padding: 31px 126px 44px 126px;
+
+
+        &__content {
+            padding: 31px 126px 44px 126px;
+
+            &_header {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            &_main {
+                &-pic {
+                    box-shadow: cadetblue 1px;
+                    border-radius: 8px;
+
+                    img {
+
+                        border-radius: 8px;
+
+                    }
+
+                    span {
+                        position: relative;
+
+                    }
+                }
+            }
+        }
+
+
+    }
+
+
+}
+
+@media only screen and (min-width:1024px) {
+    .infoLocation {
+        height: 541px;
+        background-color: rgb(215, 240, 236);
+
+
+        &__content {
+            // padding: 31px 126px 44px 126px;
+
+            &_header {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            &_main {
+                &-pic {
+                    box-shadow: cadetblue 1px;
+                    border-radius: 8px;
+
+                    img {
+
+                        border-radius: 8px;
+
+                    }
+
+                    span {
+                        position: relative;
+
+                    }
+                }
+            }
+        }
+
+
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:1023px) {
+    .infoLocation {
+        height: 700px;
+        background-color: rgb(215, 240, 236);
+        padding: 5px;
+
+        &_content {
+
+
+            &_main {
+                &-pic {
+
+                    img {
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 46.1875em) {
+    .infoLocation {
+        height: 1800px;
+        background-color: #FFF;
+        padding: 10px;
+
+        &__content {
+            &_header {
+                display: flex;
+                justify-content: space-between;
+
+                h1 {
+                    font-weight: 600;
+                }
+
+                h2 {
+                    font-size: 16px;
+                }
+            }
+
+            &_main {
+                &-pic {
+
+                    height: 275px;
+                    margin-top: 10px;
+                    border-radius: 8px;
+
+                    img {
+                        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+                        border-radius: 8px;
+
+                    }
+                }
+            }
+        }
+
+
+    }
+}
