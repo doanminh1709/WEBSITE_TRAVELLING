@@ -28,10 +28,10 @@ public class HotelController {
 
     @PostMapping("/{locationId}")
 //    @PreAuthorize("@userAuthorizer.isAdmin(authentication)")
-    public ResponseEntity<?> createHotel(@RequestBody @Valid HotelDTO hotelDTO,
-                                         @PathVariable("locationId") Long locationId) {
-        return ResponseEntity.status(201).body(iHotelService.createHotel(hotelDTO, locationId));
-    }
+//    public ResponseEntity<?> createHotel(@RequestBody @Valid HotelDTO hotelDTO,
+//                                         @PathVariable("locationId") Long locationId) {
+//        return ResponseEntity.status(201).body(iHotelService.createHotel(hotelDTO, locationId));
+//    }
 
     @PatchMapping("/{id}")
 //    @PreAuthorize("@userAuthorizer.isAdmin(authentication)")
