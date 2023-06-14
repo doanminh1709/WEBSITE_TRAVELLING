@@ -34,11 +34,37 @@ public class ServiceController {
     }
 
     @PostMapping("/{userId}/{roomId}")
-    public ResponseEntity<?> createService(@RequestBody ServicesDTO servicesDTO,
-                                           @PathVariable("userId") Long userId,
-                                           @PathVariable("roomId") Long roomId) {
-        return ResponseEntity.status(200).body(iServicesService.createService(servicesDTO,roomId,userId));
+    @RestController
+    public class ServiceController {
+
+        private final IServiceService iServiceService;
+
+        public ServiceController(IServiceService iServiceService) {
+            this.iServiceService = iServiceService;
+        }
+
+        @PostMapping("/users/{userId}/rooms/{roomId}/services")
+        public ResponseEntity<?> createService(@RequestBody ServiceDTO serviceDTO,
+                                               @PathVariable("userId") Long userId,
+                                               @PathVariable("roomId") Long roomId) {
+            // Kiểm tra xem người dùng và phòng có tồn tại không
+            if (!userService.exists(userId) || !roomService.exists(roomId)) {
+                return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+            }
+
+            // Tạo dịch vụ mới
+            Service createdService = iServiceService.createService(serviceDTO, roomId, userId);
+
+            // Kiểm tra xem việc tạo dịch vụ thành công hay không
+            if (createdService == null) {
+                return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
+            }
+
+            // Trả về đối tượng dịch vụ đã tạo thành công
+            return ResponseEntity.status(HttpStatus.OK).body(createdService);
+        }
     }
+
 
     @PatchMapping("/{id}")
     public ResponseEntity<?> editServiceById(@PathVariable("id") Long id, @RequestBody ServicesDTO servicesDTO) {
